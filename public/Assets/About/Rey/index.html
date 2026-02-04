@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+        <a href="/">Lvthn</a>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#spotify">Playlist</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div id="menu" class="hamburger-menu">
+        <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none">
+          <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg width="35px" height="35px" viewBox="0 0 32 32">
+            <g id="cross">
+              <line x1="7" x2="25" y1="7" y2="25" stroke="#fff" stroke-width="2" />
+              <line x1="7" x2="25" y1="25" y2="7" stroke="#fff" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skill">Skill</a></li>
+          <li><a class="nav-link" href="#spotify">Playlist</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <svg viewBox="0 0 1500 500" data-aos="fade-down">
+            <text x="50%" y="50%" text-anchor="middle">Reyzidane</text>
+          </svg>
+          <h1 data-aos="zoom-in-up">
+            Developing creative game experiences for <span>Every Player</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">About Me</h1>
+          <div class="about-me">
+            <div data-aos="zoom-out-right" class="profile">
+              <div class="image-box">
+                <img src="assets/profile.png" alt="profile" />
+              </div>
+            </div>
+
+            <div data-aos="zoom-in-left" class="description">
+              <div class="name-role">
+                <h1>Reyzidane</h1>
+                <div class="role"><h2>Web & Game Developer</h2></div>
+              </div>
+
+              <p>
+                I’m Reyzidane, a 16-year-old Web Developer and Game Developer who loves creating 
+                interactive digital experiences. I specialize in front-end development, building 
+                responsive interfaces and clean user experiences using modern tools and best practices. 
+                Outside of coding, I also enjoy music—especially rap—and Travis Scott is one of the 
+                artists who inspires my creative energy.
+                <br /><br />
+                Beyond web development, I explore game creation and enjoy building custom Minecraft 
+                mods that blend creativity, code, and gameplay design. Working on mods has taught me 
+                problem-solving, scripting, asset creation, and how to turn ideas into features 
+                that players genuinely enjoy.
+                <br /><br />
+                I’m constantly improving myself—learning new technologies, experimenting with design, 
+                and building projects that challenge me to grow. My goal is to create digital products 
+                and game experiences that are functional, polished, and meaningful for users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section id="skill" class="skill">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">Skill</h1>
+
+          <div class="skills">
+            <div class="skill-box"><img src="assets/icon/html5.svg" alt="html" /></div>
+            <div class="skill-box"><img src="assets/icon/css3.svg" alt="css" /></div>
+            <div class="skill-box"><img src="assets/icon/javascript.svg" alt="javascript" /></div>
+            <div class="skill-box"><img src="assets/icon/github.svg" alt="github" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spotify -->
+    <section id="spotify" class="spotify">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">My Spotify Playlist</h1>
+
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/3FVQ2g0zOMNI6FApki4muc?utm_source=generator&theme=0"
+            width="100%" height="600" frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="profile">
+          <div class="logo">
+            <img src="assets/logo.png" alt="logo" />
+            <a href="">Lvthn</a>
+          </div>
+
+          <p>
+            I’m Reyzidane, a 16-year-old Web & Game Developer who enjoys creating 
+            interactive digital experiences. I build Minecraft mods, explore new ideas, 
+            and stay inspired by rap music—especially Travis Scott.
+          </p>
+
+          <div class="social-media-container">
+            <div class="social-media"><box-icon color="#fff" type="logo" name="instagram"></box-icon></div>
+            <div class="social-media"><box-icon color="#fff" type="logo" name="youtube"></box-icon></div>
+            <div class="social-media"><box-icon color="#fff" type="logo" name="tiktok"></box-icon></div>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#spotify">Playlist</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>

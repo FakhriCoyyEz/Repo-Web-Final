@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background: transparent; font-family: "Times New Roman", serif; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+    .slider-container { display: flex; gap: 30px; overflow-x: auto; scroll-behavior: smooth; padding: 20px; scroll-snap-type: x mandatory; width: 350px; }
+    .slider-container::-webkit-scrollbar { display: none; }
+    .id-card { flex: 0 0 350px; scroll-snap-align: center; background: white; border-radius: 15px; width: 350px; padding: 20px; color: #333; box-shadow: 0 10px 20px rgba(0,0,0,0.3); position: relative; box-sizing: border-box; }
+    .id-card .number { font-size: 10px; color: #666; }
+    .id-card .header { background: #1111a5; color: white; text-align: center; padding: 5px; font-weight: bold; border-radius: 5px; margin-top: 5px; }
+    .id-card .cont { display: flex; gap: 15px; margin-top: 15px; }
+    .id-card .photo { width: 100px; height: 120px; background-size: cover; background-position: center; border: 1px solid #ddd; }
+    .id-card .barcode { height: 30px; background: repeating-linear-gradient(90deg, #333, #333 1px, transparent 1px, transparent 3px); margin-top: 10px; }
+    .id-card .info { flex: 1; }
+    .id-card .info-row { display: flex; margin-bottom: 5px; font-size: 12px; }
+    .id-card .info-row label { width: 60px; font-weight: bold; }
+    .id-card .bar-biru { background: #1111a5; color: white; text-align: center; font-size: 10px; padding: 5px; margin-top: 15px; border-radius: 3px; }
+    .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(17, 17, 165, 0.8); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 24px; z-index: 100; transition: background 0.3s; }
+    .nav-btn:hover { background: #1111a5; }
+    #prevBtn { left: 0px; } #nextBtn { right: 0px; }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="id-card">
+      <div class="number">No. 000000000001</div>
+      <div class="header">ID CARD</div>
+      <div class="cont">
+        <div class="photo-container">
+          <div class="photo" style="background-image:url('/Assets/cowok.png')"></div>
+          <div class="barcode"></div>
+        </div>
+        <div class="info">
+          <div class="info-row"><label>NAME</label><span>:</span><span class="value">Naufal Dilivio Adani, S.Sn.</span></div>
+          <div class="info-row"><label>AGE</label><span>:</span><span class="value">100</span></div>
+          <div class="info-row"><label>POSITION</label><span>:</span><span class="value">Trainer</span></div>
+        </div>
+      </div>
+      <div class="bar-biru">ICTEAM BHAWIKARSU 2025</div>
+    </div>
+    <div class="id-card">
+      <div class="number">No. 000000000002</div>
+      <div class="header">ID CARD</div>
+      <div class="cont">
+        <div class="photo-container">
+          <div class="photo" style="background-image:url('/Assets/cowok.png')"></div>
+          <div class="barcode"></div>
+        </div>
+        <div class="info">
+          <div class="info-row"><label>NAME</label><span>:</span><span class="value">Aflah Mahesa Agni, S.P.W.K.</span></div>
+          <div class="info-row"><label>AGE</label><span>:</span><span class="value">100000</span></div>
+          <div class="info-row"><label>POSITION</label><span>:</span><span class="value">Trainer</span></div>
+        </div>
+      </div>
+      <div class="bar-biru">ICTEAM BHAWIKARSU 2025</div>
+    </div>
+  </div>
+  <button id="prevBtn" class="nav-btn">‹</button>
+  <button id="nextBtn" class="nav-btn">›</button>
+  <script>
+    const container = document.querySelector('.slider-container');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    nextBtn.addEventListener('click', () => { container.scrollBy({ left: 350, behavior: 'smooth' }); });
+    prevBtn.addEventListener('click', () => { container.scrollBy({ left: -350, behavior: 'smooth' }); });
+  </script>
+</body>
+</html>
