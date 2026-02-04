@@ -42,3 +42,4 @@ next-env.d.ts
 auth.ts
 /auth.js
 /lib
+/server
