@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+index.ts
 
 # vercel
 .vercel
@@ -43,3 +44,5 @@ auth.ts
 /auth.js
 /lib
 /server
+/server/db
+/db
