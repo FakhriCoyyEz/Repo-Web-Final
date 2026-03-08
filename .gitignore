@@ -46,3 +46,4 @@ auth.ts
 /server
 /server/db
 /db
+lib/

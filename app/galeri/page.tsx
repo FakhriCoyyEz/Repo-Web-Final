@@ -18,13 +18,11 @@ export default async function GalleryPage() {
     <div className="container mx-auto">
       <Navbar />
       <header className="mb-12 text-center max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4 flex items-center justify-center gap-3">
+        <h1 className="hero-notmain text-4xl font-bold flex items-center justify-center gap-3 m-2 p-2">
           <ImageIcon className="w-10 h-10 text-primary" />
           Galeri ICT
         </h1>
-        <p className="text-muted-foreground">
-          Koleksi karya, dokumentasi, dan aset kreatif dari ICT TEAM dalam berbagai format.
-        </p>
+    
       </header>
 
       <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">

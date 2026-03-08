@@ -40,7 +40,7 @@ export default function LoginPage() {
       if (authError) {
         let msg = authError.message || "Email atau password salah.";
         if (msg.toLowerCase().includes("user not found")) {
-          msg = "User tidak ditemukan. Silakan jalankan Inisialisasi User di bawah.";
+          msg = "Hayoo, usernya siapa? Coba cek lagi deh.";
         }
         if (msg.toLowerCase().includes("origin")) {
           msg = "Error Origin: WOY DONGO UBAH TRUSTED ORIGINNYA DULU BEGO.";
@@ -48,7 +48,7 @@ export default function LoginPage() {
         setError(msg);
         toast.error("Gagal Login", { description: msg });
       } else {
-        toast.success("Berhasil Login", { description: "Selamat datang kembali!" });
+        toast.success("Berhasil Login", { description: "Selamat Datang King!" });
         router.push("/admin");
         router.refresh();
       }
@@ -124,6 +124,7 @@ export default function LoginPage() {
               Masalah login? Hubungi FakhriCoyyEz
             </p>
             <div className="flex flex-col gap-2">
+            //udah gak pake button ini, buat superadmin udah ditaro di supabase, dan buat ictbwks ada diusertable
               <Button 
                 variant="outline" 
                 size="sm" 

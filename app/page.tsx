@@ -9,7 +9,11 @@ import { NameCardSlider } from '@/components/name-card-slider'
 export default function IndexPage() {
   const bphMembers = [
     { no: "000000000001", name: "MATA BINTANG PENEDUH", class: "XI-C", position: "KETUA UMUM", photo: "/Assets/cowok.png" },
-    { no: "000000000002", name: "ANDHIKA AQIL FATTAN", class: "XI-E", position: "WAKIL KETUA UMUM", photo: "/Assets/cowok.png" }
+    { no: "000000000002", name: "ANDHIKA AQIL FATTAN", class: "XI-E", position: "WAKIL KETUA UMUM", photo: "/Assets/cowok.png" },
+    { no: "000000000001", name: "RRQ ERIC", class: "XI-G", position: "Awutish", photo: "/Assets/cowok.png" },
+    { no: "000000000002", name: "RRQ BAYU", class: "XI-G", position: "WAKIL KETUA Hengker Protaizi (Femboy)", photo: "/Assets/cowok.png" },
+    { no: "000000000001", name: "EVOS NDOKO", class: "XI-G", position: "Ketua Henger Protaizi", photo: "/Assets/cowok.png" },
+    { no: "000000000002", name: "EVOS HENGKY", class: "XI-G", position: "Ngisi role", photo: "/Assets/cowok.png" },
   ]
   const [loaded, setLoaded] = useState(false)
   const [showIntro, setShowIntro] = useState(true)

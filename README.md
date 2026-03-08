@@ -1,4 +1,4 @@
-#For u if want run it lol
+
 
 - npm install
 - npm install next

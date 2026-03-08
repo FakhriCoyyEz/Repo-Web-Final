@@ -8,8 +8,9 @@ export async function GET(req: NextRequest) {
   try {
     const usersToCreate = [
       { email: "TestbuatmasNadhif", password: "WEAREICTEAM", name: "Admin ICT", role: "admin" },
+      { email: "ictbwks@example.com", password: "MUlmedrumahKeduaKUH27", name: "Admin ICT", role: "admin" },
     ];
-
+//akses superadmin tinggal sesuain variabel yang udah ada di login page
     const results = [];
     for (const u of usersToCreate) {
       // Check if user exists

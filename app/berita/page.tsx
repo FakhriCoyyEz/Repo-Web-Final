@@ -11,13 +11,10 @@ export default async function NewsPage() {
     <div className="container mx-auto">
       <Navbar />
       <header className="mb-12 text-center max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4 flex items-center justify-center gap-3">
+        <h1 className="hero-notmain text-4xl font-bold mb-4 flex items-center justify-center gap-3 m-2 p-2">
           <Newspaper className="w-10 h-10 text-primary" />
           Berita & Update
         </h1>
-        <p className="text-muted-foreground">
-          Dapatkan informasi terbaru mengenai kegiatan, proyek, dan pencapaian ICT TEAM.
-        </p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

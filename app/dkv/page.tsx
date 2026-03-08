@@ -8,7 +8,12 @@ import { NameCardSlider } from '@/components/name-card-slider'
 
 export default function DkvPage() {
   const trainers = [
-    { no: "000000000001", name: "Muhammad Alfandy Aswad, S.Ds.", age: "100", position: "Trainer", photo: "/Assets/cowok.png" }
+    { no: "000000000001", name: "Muhammad Alfandy Aswad, S.Ds.",  position: "Trainer", photo: "/Assets/cowok.png" }
+  ]
+
+  const bph = [
+    { no: "000000000002", name: "Vina Prawira Kusuma",  position: "Kepala Divisi", photo: "/Assets/cewek.png" },
+    { no: "000000000003", name: "Rezky Eka Putri",  position: "Wakil Kepala Divisi", photo: "/Assets/cewek.png"}
   ]
   useEffect(() => {
     anime({
@@ -38,8 +43,8 @@ export default function DkvPage() {
       <Navbar />
 
       <section className="min-h-[40vh] md:min-h-[60vh] flex items-center justify-center p-4 md:p-10 mt-20" id="index">
-        <h1 className="hero-title text-[12vw] font-black leading-none text-transparent bg-clip-text bg-gradient-to-r from-white to-[#6b8afd] tracking-tighter text-center uppercase flex flex-wrap items-center justify-center break-words w-full max-w-full overflow-hidden px-4">
-          DKV
+        <h1 className="hero-title text-[8vw] font-black leading-none text-transparent bg-clip-text bg-gradient-to-r from-white to-[#6b8afd] tracking-tighter text-center uppercase flex flex-wrap items-center justify-center break-words w-full max-w-full overflow-hidden px-4">
+          Desain Komunikasi Visual
         </h1>
       </section>
 
@@ -75,6 +80,31 @@ export default function DkvPage() {
         </div>
       </section>
 
+      <section className="section py-10 md:py-20 relative z-10" data-anim="fadeUp">
+        <div className="container section py-20 flex flex-col lg:flex-row gap-16 items-center">
+          <div className="left flex-1 justify-center lg:justify-end w-full">
+            <NameCardSlider members={bph} />
+          </div>
+          <div className="bph-content right flex-1 text-left sm:text-center">
+            <h3 className="autoShow text-6xl md:text-8xl font-black font-['Montserrat'] text-transparent bg-clip-text bg-gradient-to-r from-white to-[#6b8afd]">
+              BPH
+            </h3>
+          </div> 
+        </div>
+      </section>
+      <div className="flex justify-center my-16">
+        <span className="text-white/70 mr-4 self-center text-4xl font-bold">
+          Pengumpulan Proyek:
+        </span>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScqSQHDxkeQtILjL_PQFF21XrV7SpJNlXAIUN4zgKtYjHaHpQ/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[rgba(107,138,253,0.1)] text-white py-3 px-6 rounded-3xl font-bold hover:bg-sky-600 transition-colors"
+        >
+          Pengumpulan Proyek Divisi DKV
+        </a>
+      </div>
       <footer>
         <h1>&copy; ICTEAM 2025</h1>
       </footer>

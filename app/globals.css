@@ -33,6 +33,7 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 222.2 84% 4.9%;
   --radius: 0.5rem;
+  --font-display: 'Code Pro', sans-serif;
 }
 
 /* Base Styles */
@@ -168,6 +169,14 @@ body {
     margin: 0;
 }
 
+.hero-notmain {
+    font-family: 'Code Pro', sans-serif;
+    text-align: center;
+    background: rgba(107, 138, 253, 0.1);
+    border: 2px solid rgba(107, 138, 253, 0.3);
+    border-radius: 20px;
+}
+
 .section {
     padding: 60px 20px;
     max-width: 1200px;
@@ -299,7 +308,7 @@ footer {
 
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+
 
 .carousel {
   background: #EEE;

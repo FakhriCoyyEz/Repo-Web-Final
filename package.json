@@ -1,5 +1,5 @@
 {
-  "name": "yapi-base-shadcn",
+  "name": "shadcn-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -32,6 +32,7 @@
     "nanoid": "^5.1.6",
     "next": "^15.5.9",
     "next-themes": "^0.4.6",
+    "postgres": "^3.4.8",
     "radix-ui": "^1.4.3",
     "react": "19.2.1",
     "react-day-picker": "^9.12.0",

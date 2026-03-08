@@ -1,5 +1,6 @@
 "use client";
 
+import { Navbar } from '@/components/navbar'
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -126,8 +127,8 @@ export function AdminPanel() {
             <ShieldCheck className="w-6 h-6 text-green-400" />
           </div>
           <div>
-            <h3 className="font-bold">Keamanan Sistem</h3>
-            <p className="text-sm text-slate-400">Anti-DDoS dan Filter XSS aktif di seluruh API route.</p>
+            <h3 className="font-bold">Apakah Pembuat Web Masih Hidup</h3>
+            <p className="text-sm text-slate-400"></p>
           </div>
         </div>
       </div>

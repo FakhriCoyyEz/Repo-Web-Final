@@ -60,19 +60,12 @@ export function NameCardSlider({ members }: NameCardSliderProps) {
             <div className="h-[30px] w-full bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_3px)] ml-1" />
           </div>
           
-          <div className="flex-1 space-y-2 pt-2 text-black mr-1">
+          <div className="flex-1 flex flex-col space-y-2 pt-2 text-black mr-1 h-[120px] justify-center">
             <div className="flex text-xs">
               <span className="w-16 font-bold text-[#6b8afd]">NAME</span>
               <span className="mr-1">:</span>
               <span className="flex-1 font-bold uppercase">{member.name}</span>
             </div>
-            {member.age && (
-              <div className="flex text-xs">
-                <span className="w-16 font-bold text-[#6b8afd]">AGE</span>
-                <span className="mr-1">:</span>
-                <span className="flex-1">{member.age}</span>
-              </div>
-            )}
             {member.class && (
               <div className="flex text-xs">
                 <span className="w-16 font-bold text-[#6b8afd]">CLASS</span>

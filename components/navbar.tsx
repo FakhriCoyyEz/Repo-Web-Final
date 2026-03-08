@@ -32,7 +32,6 @@ export function Navbar() {
         <li><Link href="/dkv" className="hover:text-[#6b8afd]">DKV</Link></li>
         <li><Link href="/galeri" className="hover:text-[#6b8afd]">GALLERY</Link></li>
         <li><Link href="/berita " className="hover:text-[#6b8afd]">NEWS</Link></li>
-        <li><Link href="/about " className="hover:text-[#6b8afd]">ABOUT</Link></li>
         {session && (
            <li><Link href="/admin" className="hover:text-[#6b8afd]">DASHBOARD</Link></li>
         )}

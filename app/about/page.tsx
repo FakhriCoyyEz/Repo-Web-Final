@@ -1,43 +1,58 @@
-'use client'
+"use client";
 
 import { useEffect } from 'react'
 import Link from 'next/link'
-
-import { Navbar } from '@/components/navbar'
-import TiltCarousel from '@/components/TiltCarousel';
-
-export default function AboutPage() {
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY
-      document.querySelectorAll('.parallax').forEach((section, i) => {
-        const speed = 0.15 + (i * 0.05)
-        if (section instanceof HTMLElement) {
-          section.style.transform = `translateY(${scrolled * speed}px)`
-        }
-      })
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
+import anime from 'animejs'
+import * as anime from 'animejs';
+import Link from "next/link";
+import { Navbar } from '@/components/navbar';
+import "./style-card.css";
+export default function About() {
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   return (
-    <div className="loaded">
+    <>
       <Navbar />
-
-      <section className="hero">
-        <h1>ABOUT ICTEAM</h1>
-      </section>
-
-      <section className="section">
-        <div className="content">
-          <p>ICTeam merupakan ekstrakurikuler yang menjadi wadah pengembang minat siswa-siswi SMA Negeri 3 Malang dalam bidang informasi dan teknologi. ICTeam sendiri terdiri dari 3 divisi yaitu: Cinematography, DKV, and Programming. ICTeam ada di bawah naungan sie 9 OSIS/PK Bhawikarsu</p>
+      <h1 className="ml5">
+        <span className="text-wrapper">
+          <span className="line line1"></span>
+          <span className="letters letters-left">Signal</span>
+          <span className="letters ampersand">&amp;</span>
+          <span className="letters letters-right">Noise</span>
+          <span className="line line2"></span>
+        </span>
+      </h1>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <main className="page-content">
+        <div className="card">
+          <div className="content">
+            <h2 className="title">Muhammad Fakhri Zabir S.</h2>
+            <p className="copy">Fullstack Web Programmer</p>
+            <a
+              className="btn"
+              href="https://github.com/FakhriCoyyEz"
+              target="_blank"
+            >
+              My Page
+            </a>
+          </div>
         </div>
-      </section>
 
-      <footer>
-        <h1>&copy; ICTEAM 2025</h1>
-      </footer>
-    </div>
-  )
+        <div className="card">
+          <div className="content">
+            <h2 className="title">Kaysan Ali</h2>
+            <p className="copy">Frontend Dev.</p>
+            <a
+              className="btn"
+              href="https://github.com/yegthu"
+              target="_blank"
+            >
+              My Page
+            </a>
+          </div>
+        </div>
+
+        <script src="/app/about/script-card.js"></script>
+      </main>
+    </>
+  );
 }
